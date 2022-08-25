@@ -122,10 +122,10 @@ check_os_bit(){
     ARCHS=""
     if [[ `getconf WORD_BIT` = '32' && `getconf LONG_BIT` = '64' ]] ; then
         Is_64bit='y'
-        ARCHS="amd64"
+        ARCHS="arm64"
     else
         Is_64bit='n'
-        ARCHS="386"
+        ARCHS="arm"
     fi
 }
 check_centosversion(){
